@@ -1,0 +1,11 @@
+N = int(input())
+
+for i in range(0,N):
+    for j in range(0,N-i-1):
+        print(" ", end='')
+    for j in range(0,2*i+1):
+        if j%2==1:
+            print(" ", end='')
+        else:
+            print("*", end='')
+    print()
