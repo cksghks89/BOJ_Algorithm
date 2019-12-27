@@ -1,18 +1,8 @@
-N = int(input())
+a = int(input())
 
-for i in range(0,2*N-1):
-    if i < N:
-        for j in range(0,i+1):
-            print("*", end='')
-        for j in range(0,2*N - 2*(i+1)):
-            print(" ", end='')
-        for j in range(0,i+1):
-            print("*", end='')
-    else:
-        for j in range(0, 2*N-i-1):
-            print("*", end='')
-        for j in range(0, 2*N - 2*(2*N-i-1)):
-            print(" ", end='')
-        for j in range(0, 2*N-i-1):
-            print("*", end='')
+for x in range(0,a):
+    for y in range(0,a-x-1):
+        print(" ", end='')
+    for y in range(0, 2*(x+1)-1):
+        print("*", end='')
     print()

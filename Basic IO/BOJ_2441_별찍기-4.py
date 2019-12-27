@@ -1,8 +1,8 @@
 a = int(input())
 
-for x in range(0,a):
-    for y in range(0,a-x-1):
+for b in range(a, 0, -1):
+    for y in range(0,a-b):
         print(" ", end='')
-    for y in range(0, 2*(x+1)-1):
+    for x in range(0,b):
         print("*", end='')
     print()
