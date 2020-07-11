@@ -23,4 +23,6 @@ def dp_2(ci):
         list1.insert(i, min+1)
 
     return list1[X]
+
+
 print(dp_2(X))
